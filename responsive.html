@@ -1,0 +1,49 @@
+<!-- Media Queries
+    PC >= 1024px
+    740px <= Tablet <= 1024px 
+    Mobile < 740px -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .pc,
+        .tablet,
+        .mobile {
+            font-size: 68px;
+            display: none;
+            text-align: center;
+        }
+
+        /* Break point */
+        /* PC */
+        @media(min-width: 1024px) {
+            .pc {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width: 740px) and (max-width: 1023px) {
+            .tablet {
+                display: block;
+            }
+        }
+
+        /* Mobile */
+        @media(max-width: 739px) {
+            .mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="pc">PC</h2>
+    <h2 class="tablet">TABLET</h2>
+    <h2 class="mobile">MOBILE</h2>
+</body>
+
+</html>
